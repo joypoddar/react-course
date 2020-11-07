@@ -19,6 +19,7 @@ class Header extends Component {
     }
     render() {
         return (
+            // className="ml-auto" has not been added in the course version
             <React.Fragment>
                 <Navbar dark expand="md">
                     <div className="container">
@@ -27,7 +28,7 @@ class Header extends Component {
                             <img src="assets/images/logo.png" height="30" width="41" alt="Ristorante Con Fusion"/>
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                            <Nav className="ml-auto" navbar>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/home">
                                         <span className="fa fa-home fa-lg"> Home</span>
