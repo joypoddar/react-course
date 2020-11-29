@@ -3,8 +3,6 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   Button,
-  Form,
-  FormGroup,
   Label,
   Col,
   Row,
@@ -119,8 +117,8 @@ class Contact extends Component {
                     model=".firstname"
                     show="touched"
                     messages={{
-                      required: "Required",
-                      minLength: "Must be greate than 3 characters",
+                      required: "Required ",
+                      minLength: "Must be greater than 3 characters",
                       maxLength: "Must be less than 15 characters",
                     }}
                   />
@@ -148,8 +146,8 @@ class Contact extends Component {
                     model=".lastname"
                     show="touched"
                     messages={{
-                      required: "Required",
-                      minLength: "Must be greate than 3 characters",
+                      required: "Required ",
+                      minLength: "Must be greater than 3 characters",
                       maxLength: "Must be less than 15 characters",
                     }}
                   />
@@ -178,8 +176,8 @@ class Contact extends Component {
                     model=".telnum"
                     show="touched"
                     messages={{
-                      required: "Required",
-                      minLength: "Must be greate than 3 numbers",
+                      required: "Required ",
+                      minLength: "Must be greater than 3 numbers",
                       maxLength: "Must be less than 15 numbers",
                       isNumber: "Must  be a number",
                     }}
@@ -207,7 +205,7 @@ class Contact extends Component {
                     model=".email"
                     show="touched"
                     messages={{
-                      required: "Required",
+                      required: "Required ",
                       validEmail: "Ivalid Email Address",
                     }}
                   />
