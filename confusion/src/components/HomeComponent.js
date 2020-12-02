@@ -7,8 +7,8 @@ import {
   CardTitle,
   CardSubtitle,
 } from "reactstrap";
-import { baseURL } from "../shared/baseURL";
 import { Loading } from "./LoadingComponent";
+import { baseURL } from "../shared/baseURL";
 import { FadeTransform } from "react-animation-components";
 
 function RenderCard({ item, isLoading, errMess }) {
@@ -46,18 +46,22 @@ function Home(props) {
           <RenderCard
             item={props.dish}
             isLoading={props.dishesLoading}
-            errMess={props.dishesErrMess}
+            errMess={props.dishErrMess}
           />
         </div>
         <div className="col-12 col-md m-1">
           <RenderCard
             item={props.promotion}
-            isLoading={props.promosLoading}
-            errMess={props.promosErrMess}
+            isLoading={props.promoLoading}
+            errMess={props.promoErrMess}
           />
         </div>
         <div className="col-12 col-md m-1">
-          <RenderCard item={props.leader} />
+          <RenderCard
+            item={props.leader}
+            isLoading={props.leaderLoading}
+            errMess={props.leaderErrMess}
+          />
         </div>
       </div>
     </div>
